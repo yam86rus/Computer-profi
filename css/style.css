@@ -1,0 +1,145 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  color: #757575;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header__bg {
+  min-height: 31px;
+  width: 100%;
+  background: #000;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.header__icon {
+  height: 21px;
+  width: 15px;
+  margin-right: 10px;
+  fill: #fff;
+  position: relative;
+  top: 5px;
+}
+
+.contacts {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  color: #fff;
+  font-size: 12px;
+}
+
+.contacts__item {
+  width: 33.33333%;
+  min-height: 31px;
+  line-height: 31px;
+  letter-spacing: 0.055em;
+}
+
+.contacts-adress {
+  text-align: left;
+}
+
+.contacts-time {
+  text-align: center;
+}
+
+.contacts-phone {
+  text-align: right;
+}
+
+.contacts-title {
+  color: #757575;
+  text-transform: uppercase;
+  margin-top: 36px;
+}
+
+.button {
+  border-radius: 50px;
+  text-transform: uppercase;
+  line-height: 31px;
+  padding: 0 38px;
+  transition: all .2s ease-in-out;
+  color: #757575;
+}
+
+.button-simple {
+  background: transparent;
+  border: 1px solid #757575;
+}
+
+.button-simple:hover {
+  background: #f54243;
+  cursor: pointer;
+  color: #fff;
+  border: 1px solid #f54243;
+}
+
+.button-simple:active, .button-simple:focus {
+  outline: none;
+}
+
+.button-header {
+  margin-top: 36px;
+  margin-left: auto;
+}
+
+@media (max-width: 720px) {
+  .container {
+    padding: 0 20px;
+  }
+  .header__bg {
+    min-height: 60px;
+  }
+  .contacts {
+    flex-direction: row-reverse;
+    font-size: 16px;
+    text-transform: uppercase;
+    min-height: 60px;
+  }
+  .contacts__item {
+    width: 50%;
+    letter-spacing: 0;
+  }
+  .contacts-time, .contacts-phone {
+    display: none;
+  }
+  .contacts-title {
+    margin-top: 0;
+    color: #fff;
+  }
+  .button {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */
